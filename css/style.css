@@ -1,0 +1,13 @@
+.table {
+    display: table;
+
+
+}
+.table-row {
+    width: 50%;
+    display: table-row;
+}
+.table-cell {
+    border: 1px solid ;
+    display: table-cell;
+}
