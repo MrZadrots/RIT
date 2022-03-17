@@ -8,30 +8,52 @@
     <title>Document</title>
 </head>
 <body>
-    <section id="table">
+    <section id="Table">
         <div class="table">
             <ul class="table-row">
-                <li class="table-cell">Ячейка 1</li>
-                <li class="table-cell">Ячейка 2</li>
-                <li class="table-cell">Ячейка 3</li>
-                <li class="table-cell">Ячейка 4</li>
-                <li class="table-cell ">Ячейка 3</li>
+                <li class="table-cell" onclick=doContentBlock(this.textContent)>Ячейка 1</li>
+                <li class="table-cell" onclick=doContentBlock(this.textContent)>Ячейка 2</li>
+                <li class="table-cell" onclick=doContentBlock(this.textContent)>Ячейка 3</li>
+                <li class="table-cell" onclick=doContentBlock(this.textContent)>Ячейка 4</li>
+                <li class="table-cell " onclick=doContentBlock(this.textContent)>Ячейка 3</li>
             </ul>
             <ul class="table-row">
-                <li class="table-cell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat excepturi modi magni asperiores perferendis vel beatae repellendus. Perferendis quis delectus mollitia quia at deserunt, deleniti nostrum quas expedita eaque.</li>
-                <li class="table-cell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facere repudiandae? Ut culpa porro ad dicta eos distinctio ullam quasi perferendis expedita, tempore, velit modi voluptatem doloremque ipsa minus odit.</li>
-                <li class="table-cell">Lorem ipsum dolor sit amet.</li>
-                <li class="table-cell">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, unde.</li>
-                <li class="table-cell ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore magnam blanditiis tempora recusandae aut a nisi ea dolor, ex corporis. Esse est animi velit iusto quod officia enim nulla?</li>
+                <li class="table-cell" onclick=doContentBlock(this.textContent)>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat excepturi modi magni asperiores perferendis vel beatae repellendus. Perferendis quis delectus mollitia quia at deserunt, deleniti nostrum quas expedita eaque.</li>
+                <li class="table-cell" onclick=doContentBlock(this.textContent)>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facere repudiandae? Ut culpa porro ad dicta eos distinctio ullam quasi perferendis expedita, tempore, velit modi voluptatem doloremque ipsa minus odit.</li>
+                <li class="table-cell" onclick=doContentBlock(this.textContent)>Lorem ipsum dolor sit amet.</li>
+                <li class="table-cell" onclick=doContentBlock(this.textContent)>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, unde.</li>
+                <li class="table-cell " onclick=doContentBlock(this.textContent)>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore magnam blanditiis tempora recusandae aut a nisi ea dolor, ex corporis. Esse est animi velit iusto quod officia enim nulla?</li>
             </ul>
             <ul class="table-row">
-                <li class="table-cell last">Ячейка 1</li>
-                <li class="table-cell last">Ячейка 2</li>
-                <li class="table-cell last">Ячейка 3</li>
-                <li class="table-cell last">Ячейка 4</li>
-                <li class="table-cell last">Ячейка 3</li>
+                <li class="table-cell last" onclick=doContentBlock(this.textContent)>Ячейка 1</li>
+                <li class="table-cell last" onclick=doContentBlock(this.textContent)>Ячейка 2</li>
+                <li class="table-cell last" onclick=doContentBlock(this.textContent)>Ячейка 3</li>
+                <li class="table-cell last" onclick=doContentBlock(this.textContent)>Ячейка 4</li>
+                <li class="table-cell last" onclick=doContentBlock(this.textContent)>Ячейка 3</li>
             </ul>
         </div>
     </section>
+    <section id="Second"> 
+        <div class="container">
+            <div class="header">
+                <span>Нажми на элемент таблицы. Текст появится внизу</span>
+            </div>
+            <div class="main">
+                <span id="mainText"></span>
+            </div>
+        </div>
+    
+    </section>
+    <section id="MinMaxSection">
+        <div class="container">
+            <div class="header">
+                <span>Максимальный и минимальный элементы объекта</span>
+            </div>
+            <div class="mainMinMax">
+                <span id="MinMax"></span>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
 </body>
 </html>
