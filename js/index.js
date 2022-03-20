@@ -1,9 +1,10 @@
 const doContentBlock =(el)=>{
     console.log(el);
     var tmp = document.getElementById("mainText");
-    console.log(tmp)
     tmp.textContent = el;
 }
+
+
 const minMaxObj = ()=>{
     obj={
 
@@ -17,10 +18,8 @@ const minMaxObj = ()=>{
     let value = []
     for(let i=0;i<valuesObj.length;i++){
         const keys = Object.keys(valuesObj[i]);
-        console.log(keys)
         for(let k=0;k<keys.length;k++){
             const tmp = valuesObj[i][keys[k]];
-            console.log('tmp',tmp);
             if(Array.isArray(tmp)){
                 for(let j=0;j<tmp.length;j++){
                     value.push(tmp[j]);
@@ -30,7 +29,6 @@ const minMaxObj = ()=>{
                 value.push(tmp);
             }
             else{
-                console.log("OBject",tmp)
                 const keysTmp = Object.keys(tmp)
                 for(let j=0;j<keysTmp.length;j++){
                     value.push(tmp[keysTmp[j]]);
@@ -42,20 +40,21 @@ const minMaxObj = ()=>{
     value.sort(function (a,b){
         return a-b;
     });
-    for(let i=0;i<value.length;i++){
-        console.log(typeof(value[i]));
-    }
-    console.log("resValue",value);
-    console.log(typeof(value[3]));
     let min,max;
     min = max = 0;
     min = value[0];
     max = value[value.length-1];    
-    console.log("obj",obj);
+
 
     console.log('min,max',min,max);
 
     const minMax = document.getElementById("MinMax");
     minMax.textContent = String(min) + " " + String(max);
 }
+
+$('.table ul:eq(0)').css('display', 'table-row').show(500, function(){
+	$(this).css('display', 'table-row').next().show(500, arguments.callee);
+});
+
+
 minMaxObj();
