@@ -52,9 +52,9 @@ const minMaxObj = ()=>{
     minMax.textContent = String(min) + " " + String(max);
 }
 
-$('.table ul:eq(0)').css('display', 'table-row').show(500, function(){
-	$(this).css('display', 'table-row').next().show(500, arguments.callee);
-});
+$('.table ul:eq(0)').show(500, function(){
+	$(this).next().show(500, arguments.callee).css('display', 'table-row');
+}).css('display', 'table-row');
 
 
 minMaxObj();
